@@ -56,8 +56,8 @@ namespace MaterialRecord
             string id = Session["MaterialRecord_PRINTID"] == null? "" : Session["MaterialRecord_PRINTID"].ToString();
             if (state != "" && id != "")
             {
-                string startId = id.Substring(0, id.IndexOf('-'));
-                string endId = id.Substring(id.IndexOf('-') + 1);
+                string startId = id.Substring(0, id.IndexOf('~'));
+                string endId = id.Substring(id.IndexOf('~') + 1);
 
                 if (state.Equals("ALL"))
                 {

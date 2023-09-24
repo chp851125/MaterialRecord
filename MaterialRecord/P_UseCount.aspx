@@ -150,7 +150,7 @@
                 <LayoutTemplate>
                     <table runat="server" id="itemPlaceholderContainer" style="" border="0" class="table table-striped">
                         <tr runat="server">
-                            <th runat="server" style="width: 5%; text-align: center">
+                            <th runat="server" style="width: 7%; text-align: center">
                                 <%--<asp:CheckBox ID="chk_allselected" runat="server" OnCheckedChanged="chk_allselected_CheckedChanged" AutoPostBack="true" />全選</th>--%>
                                 <div class="summary">
                                     功能
@@ -168,7 +168,7 @@
                             <th runat="server" style="width: 5%">建立日</th>
                             <th runat="server" style="width: 8%">開始使用日</th>
                             <th runat="server" style="width: 8%">報廢日</th>
-                            <th runat="server" style="width: 20%">備註</th>
+                            <th runat="server" style="width: 18%">備註</th>
                         </tr>
                         <tr runat="server" id="itemPlaceholder"></tr>
                     </table>

@@ -201,7 +201,7 @@ namespace MaterialRecord
             string ID = data[1];
             //Response.Redirect("PrintQRCode.aspx?code=" + MaterialType + ID);
             string state = data[5];
-            Session["MaterialRecord_PRINTID"] = ID + "-" + ID;
+            Session["MaterialRecord_PRINTID"] = ID + "~" + ID;
             string url = "PrintQRCode.aspx?state=" + state;
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "test", "window.open('" + url + "'); location.href='P_Summary.aspx';", true);
         }
@@ -746,7 +746,7 @@ namespace MaterialRecord
                 //string url = "PrintQRCode.aspx?code=" + ID;
                 string startID = ddl_printMaterialType.SelectedValue + txt_startID.Text.PadLeft(5, '0');
                 string endID = ddl_printMaterialType.SelectedValue + txt_endID.Text.PadLeft(5, '0'); ;
-                Session["MaterialRecord_PRINTID"] = startID + "-" + endID;
+                Session["MaterialRecord_PRINTID"] = startID + "~" + endID;
                 string url = "PrintQRCode.aspx?state=" + ddl_printMaterialState.SelectedValue;
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "test", "window.open('" + url + "'); location.href='P_Summary.aspx';", true);
             }

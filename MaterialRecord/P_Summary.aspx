@@ -192,7 +192,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="lbl_MaterialType" class="col-sm-4 col-form-label addRedStar">包裝類型</label>
+                                    <label for="lbl_MaterialType" class="col-sm-4 col-form-label addRedStar">耗材類型</label>
                                     <div class="col-sm-8">
                                         <asp:DropDownList ID="ddl_MaterialType" runat="server" CssClass="dropdownlist"></asp:DropDownList>
                                     </div>
@@ -316,8 +316,8 @@
                                                 <th runat="server" style="width: 10%">修改前<br>可使用次數</th>
                                                 <th runat="server" style="width: 10%">修改後<br>可使用次數</th>
                                                 <th runat="server" style="width: 5%">廠區</th>
-                                                <th runat="server" style="width: 5%">狀態</th>
-                                                <th runat="server" style="width: 15%">備註</th>
+                                                <th runat="server" style="width: 7%">狀態</th>
+                                                <th runat="server" style="width: 13%">備註</th>
                                             </tr>
                                             <tr runat="server" id="itemPlaceholder"></tr>
                                         </table>
@@ -355,7 +355,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="lbl_MaterialType" class="col-sm-4 col-form-label addRedStar">包裝類型</label>
+                                    <label for="lbl_MaterialType" class="col-sm-4 col-form-label addRedStar">耗材類型</label>
                                     <div class="col-sm-8">
                                         <asp:DropDownList ID="ddl_printMaterialType" runat="server" CssClass="dropdownlist"></asp:DropDownList>
                                     </div>

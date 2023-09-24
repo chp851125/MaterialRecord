@@ -133,7 +133,7 @@ namespace MaterialRecord
         }
         protected void btn_excel_Click(object sender, EventArgs e)
         {
-            exportExcel("使用次數統計表" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx");
+            exportExcel("耗材使用紀錄表" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx");
         }
 
         public void exportExcel(string FileName)
@@ -141,7 +141,7 @@ namespace MaterialRecord
             Response.Clear();
             Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
             XSSFWorkbook workbook = new XSSFWorkbook();
-            ISheet u_sheet = workbook.CreateSheet("使用次數統計表");
+            ISheet u_sheet = workbook.CreateSheet("耗材使用紀錄表");
 
             string[] titleArray = { "類別", "編號", "名稱", "可使用次數", "	廠區", "狀態", "建立日", "開始使用日", "報廢日", "備註", "總使用次數" };
             string[] fieldArray = { "MaterialType", "ID", "MaterialName", "UseCount", "Factory", "MaterialState", "CreateDate", "StartUseDate", "ScrapDate", "Remark", "TotalCount" };
